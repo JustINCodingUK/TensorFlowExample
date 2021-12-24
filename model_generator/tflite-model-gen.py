@@ -26,7 +26,7 @@ assert tf.__version__.startswith('2')
 tf.get_logger().setLevel('ERROR')
 logging.set_verbosity(logging.ERROR)
 
-data = 'https://github.com/JustINCodingUK/TensorFlowExample/blob/main/data.tar.gz?raw=true'
+data = 'https://github.com/JustINCodingUK/TensorFlowExample/blob/main/data1.tar.gz?raw=true'
 data_dir = tf.keras.utils.get_file('/content/data.tar.gz', origin=data, archive_format='tar')
 
 # !tar -xzvf "/content/data.tar.gz" -C "/content/"
