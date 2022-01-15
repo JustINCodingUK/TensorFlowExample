@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Fruits Classifier</string>
+    <string name="title_activity_login_screen">LoginScreen</string>
 </resources>
