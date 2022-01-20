@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FruitsClassifier">
         <activity
+            android:name=".AboutActivity"
+            android:exported="true"
+            android:label="@string/title_activity_about"
+            android:theme="@style/Theme.FruitsClassifier.NoActionBar" />
+        <activity
             android:name=".LoginScreen"
             android:exported="true"
             android:label="@string/title_activity_login_screen"
