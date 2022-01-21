@@ -1,5 +1,6 @@
 package io.github.JustINCoding
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -21,16 +22,16 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 
-class LoginScreen: ComponentActivity(){
+class LauncherActivity: ComponentActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-           ActivitySettings()
+           createLauncherActivity()
         }
     }
 
     @Composable
-    fun ActivitySettings() {
+    fun createLauncherActivity() {
         Image(
             painter = painterResource(id = R.drawable.green_grid),
             contentDescription = "",
@@ -77,16 +78,20 @@ class LoginScreen: ComponentActivity(){
         }
 
     }
-    
 
-    
-    private fun onStartClick(){}
+    private fun onStartClick(){
+        val forStart: Intent = Intent(this, CameraActivity::class.java)
+        startActivity(forStart)
+    }
 
-    private fun onAboutClick(){}
+    private fun onAboutClick(){
+        val forAbout: Intent = Intent(this, AboutActivity::class.java)
+        startActivity(forAbout)
+    }
 
     @Composable
     @Preview(showBackground = true)
-    fun ComposeMethod(){
-        ActivitySettings()
+    fun createLauncherPreview(){
+        createLauncherActivity()
     }
 }

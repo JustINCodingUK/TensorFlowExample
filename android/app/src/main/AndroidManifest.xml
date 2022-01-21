@@ -10,12 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FruitsClassifier">
         <activity
+            android:name=".CameraActivity"
+            android:exported="true"
+            android:label="@string/title_activity_camera"
+            android:theme="@style/Theme.FruitsClassifier.NoActionBar" />
+        <activity
             android:name=".AboutActivity"
             android:exported="true"
             android:label="@string/title_activity_about"
             android:theme="@style/Theme.FruitsClassifier.NoActionBar" />
         <activity
-            android:name=".LoginScreen"
+            android:name=".LauncherActivity"
             android:exported="true"
             android:label="@string/title_activity_login_screen"
             android:theme="@style/Theme.FruitsClassifier.NoActionBar">
