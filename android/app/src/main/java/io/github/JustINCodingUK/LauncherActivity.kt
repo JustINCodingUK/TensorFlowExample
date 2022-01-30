@@ -1,4 +1,4 @@
-package io.github.JustINCoding
+package io.github.JustINCodingUK
 
 import android.content.Intent
 import android.os.Bundle
@@ -20,6 +20,9 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import io.github.JustINCoding.R
+import io.github.JustINCodingUK.ui.AboutActivity
+import io.github.JustINCodingUK.ui.CameraActivity
 
 
 class LauncherActivity: ComponentActivity(){

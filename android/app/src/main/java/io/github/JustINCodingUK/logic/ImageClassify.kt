@@ -1,4 +1,4 @@
-package io.github.JustINCoding.logic
+package io.github.JustINCodingUK.logic
 
 import android.content.Context
 import android.graphics.Bitmap

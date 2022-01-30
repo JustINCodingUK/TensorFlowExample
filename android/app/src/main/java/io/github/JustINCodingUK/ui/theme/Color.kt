@@ -1,4 +1,4 @@
-package io.github.JustINCoding.ui.theme
+package io.github.JustINCodingUK.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
