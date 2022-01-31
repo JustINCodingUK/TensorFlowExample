@@ -3,4 +3,8 @@
     <string name="title_activity_login_screen">LoginScreen</string>
     <string name="title_activity_about">AboutActivity</string>
     <string name="title_activity_camera">CameraActivity</string>
+    <string name="takePic">Continue</string>
+    <!--<string name="androidx_camera_default_config_provider" translatable="false">
+        androidx.camera.camera2.Camera2Config$DefaultProvider
+    </string>-->
 </resources>

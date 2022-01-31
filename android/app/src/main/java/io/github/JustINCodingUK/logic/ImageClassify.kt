@@ -26,7 +26,7 @@ class ImageClassify(context: Context) {
         if(!::yuvBuffer.isInitialized){
             pixels = image.cropRect.width() * image.cropRect.height()
             val pixelSize = ImageFormat.getBitsPerPixel(ImageFormat.YUV_420_888)
-            yuvBuffer = ByteBuffer.allocateDirect(pixels * pixelSize/8)
+            yuvBuffer = ByteBuffer.allocateDirect(4*32*180*180*pixelSize)
         }
 
         yuvBuffer.rewind()

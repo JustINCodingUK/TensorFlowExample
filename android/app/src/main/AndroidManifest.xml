@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.github.JustINCoding">
 
+    <uses-feature android:name="android.hardware.camera.any"></uses-feature>
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,14 +13,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FruitsClassifier">
         <activity
-            android:name="io.github.JustINCodingUK.ui.CameraActivity"
-            android:exported="true"
-            android:label="@string/title_activity_camera"
-            android:theme="@style/Theme.FruitsClassifier.NoActionBar" />
-        <activity
             android:name="io.github.JustINCodingUK.ui.AboutActivity"
             android:exported="true"
             android:label="@string/title_activity_about"
+            android:theme="@style/Theme.FruitsClassifier.NoActionBar" />
+        <activity
+            android:name="io.github.JustINCodingUK.ui.CameraActivity"
+            android:exported="true"
+            android:label="@string/title_activity_camera"
             android:theme="@style/Theme.FruitsClassifier.NoActionBar" />
         <activity
             android:name="io.github.JustINCodingUK.LauncherActivity"

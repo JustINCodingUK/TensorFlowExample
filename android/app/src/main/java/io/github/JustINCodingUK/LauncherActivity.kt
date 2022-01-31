@@ -24,7 +24,6 @@ import io.github.JustINCoding.R
 import io.github.JustINCodingUK.ui.AboutActivity
 import io.github.JustINCodingUK.ui.CameraActivity
 
-
 class LauncherActivity: ComponentActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
